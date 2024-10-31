@@ -60,6 +60,9 @@
 <p>RE-Net(train)：将可观察到的局部图中的s,r和global_emb等放入Aggregator聚合器（RGCN）当中，聚合器的输出结果为两个序列s_packed_input,s_packed_input_r分别放入encoder,encoder_r中，编码实体表示和关系表示，RE-Net类的self.encoder被定义为nn.GRU，最后分别送入线性层self.linear,self.linear_r(nn.linear)和dropout层预测客体和关系并分别计算损失</p>
 <p>RE-Net(valid,test)：RE-Net_global预测时间戳t的主体，客体分布后采样前self.num_k个，更新（主体和客体的列表、索引、历史交互缓存），构建新的时间点的图，更新图字典（graph_dict）和全局嵌入表示（global_emb）。再重复以上操作↑</p>
 ]]></content>
+      <categories>
+        <category>deep-learning</category>
+      </categories>
       <tags>
         <tag>知识图谱</tag>
       </tags>
