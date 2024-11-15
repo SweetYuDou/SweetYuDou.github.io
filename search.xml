@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>RE-Net</title>
+    <title>读RE-Net有但不多的一些理解</title>
     <url>/2024/11/01/RE-Net/</url>
     <content><![CDATA[<h3 id="《Recurrent-Event-Network-Autoregressive-Structure-Inference-over-Temporal-Knowledge-Graphs》论文解读"><a href="#《Recurrent-Event-Network-Autoregressive-Structure-Inference-over-Temporal-Knowledge-Graphs》论文解读" class="headerlink" title="《Recurrent Event Network: Autoregressive Structure Inference over Temporal Knowledge Graphs》论文解读"></a>《Recurrent Event Network: Autoregressive Structure Inference over Temporal Knowledge Graphs》论文解读</h3><h4 id="RGCN"><a href="#RGCN" class="headerlink" title="RGCN"></a>RGCN</h4><img lazyload src="/images/loading.svg" data-src="/2024/11/01/RE-Net/RGCN_formula.png" class title="RGCN_formula">
 
@@ -41,7 +41,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Docker</title>
+    <title>玩Docker有但不多的一些心得</title>
     <url>/2024/11/14/Docker/</url>
     <content><![CDATA[<ul>
 <li>docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。你拉的镜像如果是Dockerhub的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理。阿里云ECS可以使用阿里云镜像加速器，&#x2F;etc&#x2F;docker&#x2F;daemon.json如下配置即可，不要加其他源：</li>
@@ -50,7 +50,7 @@
 
 <ul>
 <li>本地访问阿里云ECS的网页时，若出现无法访问的问题，可以检查该ECS配置的安全组是否开放HTTP（80）、HTTPS（443）端口。</li>
-<li>用clash来给服务器配置代理，可以参考<a class="link" href="https://github.com/nelvko/clash-for-linux-install?tab=readme-ov-file">nelvko&#x2F;clash-for-linux-install: 优雅地部署基于 Clash 的代理环境。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，其中订阅就是一个链接，可以从机场网站上找，类似这样的</li>
+<li>用clash来给服务器配置代理，可以参考<a class="link" href="https://github.com/nelvko/clash-for-linux-install?tab=readme-ov-file">nelvko&#x2F;clash-for-linux-install: 优雅地部署基于 Clash 的代理环境。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，其中订阅就是一个链接，可以从机场网站上找，类似这样的：</li>
 </ul>
 
 
