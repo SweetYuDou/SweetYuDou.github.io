@@ -40,4 +40,39 @@
         <tag>知识图谱</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Docker</title>
+    <url>/2024/11/14/Docker/</url>
+    <content><![CDATA[<ul>
+<li>docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。你拉的镜像如果是Dockerhub的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理。阿里云ECS可以使用阿里云镜像加速器，&#x2F;etc&#x2F;docker&#x2F;daemon.json如下配置即可，不要加其他源：</li>
+</ul>
+<div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;registry-mirrors&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;https://***.mirror.aliyuncs.com&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>本地访问阿里云ECS的网页时，若出现无法访问的问题，可以检查该ECS配置的安全组是否开放HTTP（80）、HTTPS（443）端口。</li>
+<li>用clash来给服务器配置代理，可以参考<a class="link" href="https://github.com/nelvko/clash-for-linux-install?tab=readme-ov-file">nelvko&#x2F;clash-for-linux-install: 优雅地部署基于 Clash 的代理环境。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，其中订阅就是一个链接，可以从机场网站上找，类似这样的</li>
+</ul>
+
+
+<p>我这里用的是clash，就复制clash订阅链接就好了。部署完clash后，服务器开放端口7890作为代理接口，来访问代理服务器。在服务器终端设置相关环境变量：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890</span><br></pre></td></tr></table></figure></div>
+
+<p>由于配置代理是为了docker服务，所以还要编辑Docker系统的服务配置文件：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">mkdir</span> -p /etc/systemd/system/docker.service.d</span><br><span class="line"><span class="built_in">sudo</span> vim /etc/systemd/system/docker.service.d/proxy.conf</span><br></pre></td></tr></table></figure></div>
+
+<p>在proxy.conf中配置以下内容：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">[Service]</span><br><span class="line">Environment=<span class="string">&quot;HTTP_PROXY=http://127.0.0.1:7890&quot;</span></span><br><span class="line">Environment=<span class="string">&quot;HTTPS_PROXY=http://127.0.0.1:7890&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>最后重启docker：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl daemon-reload</span><br><span class="line"><span class="built_in">sudo</span> systemctl restart docker</span><br></pre></td></tr></table></figure></div>
+
+<p>不出意外应该成功了，可以尝试拉取一些之前拉取失败的镜像来验证一下</p>
+]]></content>
+      <categories>
+        <category>chit-chat</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
 </search>
