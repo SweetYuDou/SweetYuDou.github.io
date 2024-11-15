@@ -18,18 +18,19 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。你拉的镜像如果是Dockerhub的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理。阿里云ECS可以使用阿里云镜像加速器，&#x2F;etc&#x2F;docker&#x2F;daemon.json如下配置即可，不要加其他源：  123&#123;  &quot;registry">
+        <meta name="description" content="docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。你拉的镜像如果是Dockerhub的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理。阿里云ECS可以使用阿里云镜像加速器，&#x2F;etc&#x2F;docker&#x2F;daemon.json如下配置即可，不要加其他源：  123&#123;  &quot;registry-mirrors&quot;:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="玩Docker有但不多的一些心得">
+<meta property="og:title" content="玩Docker后有但不多的一些心得">
 <meta property="og:url" content="http://example.com/2024/11/14/Docker/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。你拉的镜像如果是Dockerhub的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理。阿里云ECS可以使用阿里云镜像加速器，&#x2F;etc&#x2F;docker&#x2F;daemon.json如下配置即可，不要加其他源：  123&#123;  &quot;registry">
+<meta property="og:description" content="docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。你拉的镜像如果是Dockerhub的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理。阿里云ECS可以使用阿里云镜像加速器，&#x2F;etc&#x2F;docker&#x2F;daemon.json如下配置即可，不要加其他源：  123&#123;  &quot;registry-mirrors&quot;:">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.helloimg.com/i/2024/11/15/673762390d8ea.png">
 <meta property="article:published_time" content="2024-11-14T13:10:21.000Z">
-<meta property="article:modified_time" content="2024-11-15T15:06:49.700Z">
+<meta property="article:modified_time" content="2024-11-15T17:11:22.622Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Docker">
+<meta property="article:tag" content="阿里云ECS">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.helloimg.com/i/2024/11/15/673762390d8ea.png">
     
@@ -43,7 +44,7 @@
     
     <title>
         
-            玩Docker有但不多的一些心得 | YuDou&#39;s Blog
+            玩Docker后有但不多的一些心得 | YuDou&#39;s Blog
         
     </title>
 
@@ -80,7 +81,7 @@
 
     <script id="hexo-configurations">
     window.config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["dreaming..."]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"SweetYuDou","subtitle":{"text":["想吃小泡芙，一口一个..."],"hitokoto":{"enable":true,"show_author":true,"api":"https://v1.hitokoto.cn/?"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":false,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/SweetYuDou","instagram":null,"zhihu":null,"twitter":null,"email":null,"fa-solid fa-envelope":"yud0u@qq.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":"当冬夜渐暖","artist":"孙燕姿","url":"/music/孙燕姿-当冬夜渐暖.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000011TdfZ2J78KH_2.jpg?max_age=2592000","lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Status":{"path":"https://status.ohevan.com/","icon":"fa-regular fa-chart-bar"}},"search":{"enable":true,"preload":true},"tags":{"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":5},"tags":{"enable":true,"limit":5}},"footerStart":"2022/8/17 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["dreaming..."]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"SweetYuDou","subtitle":{"text":["想吃小泡芙，一口一个..."],"hitokoto":{"enable":true,"show_author":true,"api":"https://v1.hitokoto.cn/?"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":false,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/SweetYuDou","instagram":null,"zhihu":null,"twitter":null,"email":null,"fa-solid fa-envelope":"yud0u@qq.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":"当冬夜渐暖","artist":"孙燕姿","url":"/music/孙燕姿-当冬夜渐暖.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000011TdfZ2J78KH_2.jpg?max_age=2592000","lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Status":{"path":"https://status.ohevan.com/","icon":"fa-regular fa-chart-bar"}},"search":{"enable":true,"preload":true},"tags":{"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":20},"tags":{"enable":true,"limit":20}},"footerStart":"2022/8/17 11:45:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -289,7 +290,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -297,7 +298,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -323,7 +324,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">玩Docker有但不多的一些心得</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">玩Docker后有但不多的一些心得</h1>
                 </div>
             
             </div>
@@ -351,8 +352,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-15 23:06:49</span>
-            <span class="mobile">2024-11-15 23:06:49</span>
+            <span class="desktop">2024-11-16 01:11:22</span>
+            <span class="mobile">2024-11-16 01:11:22</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -383,6 +384,10 @@
                         <a href="/tags/Docker/">Docker</a>&nbsp;
                     </li>
                 
+                    <li>
+                        | <a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91ECS/">阿里云ECS</a>&nbsp;
+                    </li>
+                
             </ul>
         </span>
     
@@ -390,7 +395,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>422 Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>419 Words</span>
         </span>
     
     
@@ -415,13 +420,13 @@
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
             <ul>
-<li>docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。你拉的镜像如果是Dockerhub的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理。阿里云ECS可以使用阿里云镜像加速器，&#x2F;etc&#x2F;docker&#x2F;daemon.json如下配置即可，不要加其他源：</li>
+<li>docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。<strong>你拉的镜像如果是<em>Dockerhub</em>的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理</strong>。阿里云ECS可以使用阿里云镜像加速器，<code>/etc/docker/daemon.json</code>如下配置即可，不要加其他源：</li>
 </ul>
 <div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;registry-mirrors&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;https://***.mirror.aliyuncs.com&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
 
 <ul>
 <li>本地访问阿里云ECS的网页时，若出现无法访问的问题，可以检查该ECS配置的安全组是否开放HTTP（80）、HTTPS（443）端口。</li>
-<li>用clash来给服务器配置代理，可以参考<a class="link" target="_blank" rel="noopener" href="https://github.com/nelvko/clash-for-linux-install?tab=readme-ov-file">nelvko&#x2F;clash-for-linux-install: 优雅地部署基于 Clash 的代理环境。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，其中订阅就是一个链接，可以从机场网站上找，类似这样的：</li>
+<li>用clash来给服务器<strong>配置代理</strong>，可以参考<a class="link" target="_blank" rel="noopener" href="https://github.com/nelvko/clash-for-linux-install?tab=readme-ov-file">nelvko&#x2F;clash-for-linux-install: 优雅地部署基于 Clash 的代理环境。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，其中订阅就是一个链接，可以从机场网站上找，类似这样的：</li>
 </ul>
 <p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2024/11/15/673762390d8ea.png" alt="subscription"></p>
 <p>我这里用的是clash，就复制clash订阅链接就好了。部署完clash后，服务器开放端口7890作为代理接口，来访问代理服务器。在服务器终端设置相关环境变量：</p>
@@ -444,14 +449,14 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 玩Docker有但不多的一些心得</li>
+        <li><strong>Title:</strong> 玩Docker后有但不多的一些心得</li>
         <li><strong>Author:</strong> YuDou</li>
         <li><strong>Created at
                 :</strong> 2024-11-14 21:10:21</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-11-15 23:06:49
+                    :</strong> 2024-11-16 01:11:22
             </li>
         
         <li>
@@ -480,6 +485,10 @@
                         <a href="/tags/Docker/">#Docker</a>&nbsp;
                     </li>
                 
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91ECS/">#阿里云ECS</a>&nbsp;
+                    </li>
+                
             </ul>
         
 
@@ -488,6 +497,21 @@
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2024/11/16/Maven/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">玩Maven后有但不多的一些心得</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
                 
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
@@ -495,7 +519,7 @@
                         href="/2024/11/01/RE-Net/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">读RE-Net有但不多的一些理解</span>
+                                <span class="post-nav-title-item">读RE-Net后有但不多的一些理解</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -516,7 +540,7 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">玩Docker有但不多的一些心得</div>
+        <div class="page-title">玩Docker后有但不多的一些心得</div>
         
 
     </div>
@@ -550,11 +574,11 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        2 posts in total
+                        3 posts in total
                     </span>
                     
                         <span>
-                            2.3k words in total
+                            2.4k words in total
                         </span>
                     
                 </p>
