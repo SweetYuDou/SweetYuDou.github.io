@@ -25,11 +25,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。你拉的镜像如果是Dockerhub的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理。阿里云ECS可以使用阿里云镜像加速器，&#x2F;etc&#x2F;docker&#x2F;daemon.json如下配置即可，不要加其他源：  123&#123;  &quot;registry">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.helloimg.com/i/2024/11/15/673762390d8ea.png">
 <meta property="article:published_time" content="2024-11-14T13:10:21.000Z">
-<meta property="article:modified_time" content="2024-11-15T14:33:22.656Z">
+<meta property="article:modified_time" content="2024-11-15T15:06:49.700Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.helloimg.com/i/2024/11/15/673762390d8ea.png">
     
     
     <!--- Icon Part-->
@@ -349,8 +351,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-15 22:33:22</span>
-            <span class="mobile">2024-11-15 22:33:22</span>
+            <span class="desktop">2024-11-15 23:06:49</span>
+            <span class="mobile">2024-11-15 23:06:49</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -421,8 +423,7 @@
 <li>本地访问阿里云ECS的网页时，若出现无法访问的问题，可以检查该ECS配置的安全组是否开放HTTP（80）、HTTPS（443）端口。</li>
 <li>用clash来给服务器配置代理，可以参考<a class="link" target="_blank" rel="noopener" href="https://github.com/nelvko/clash-for-linux-install?tab=readme-ov-file">nelvko&#x2F;clash-for-linux-install: 优雅地部署基于 Clash 的代理环境。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，其中订阅就是一个链接，可以从机场网站上找，类似这样的：</li>
 </ul>
-
-
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2024/11/15/673762390d8ea.png" alt="subscription"></p>
 <p>我这里用的是clash，就复制clash订阅链接就好了。部署完clash后，服务器开放端口7890作为代理接口，来访问代理服务器。在服务器终端设置相关环境变量：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890</span><br></pre></td></tr></table></figure></div>
 
@@ -450,7 +451,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-11-15 22:33:22
+                    :</strong> 2024-11-15 23:06:49
             </li>
         
         <li>
