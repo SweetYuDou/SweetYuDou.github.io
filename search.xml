@@ -63,6 +63,9 @@
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl daemon-reload</span><br><span class="line"><span class="built_in">sudo</span> systemctl restart docker</span><br></pre></td></tr></table></figure></div>
 
 <p>不出意外应该成功了，可以尝试拉取一些之前拉取失败的镜像来验证一下</p>
+<ul>
+<li>我在阿里云ECS中配置代理后，云数据传输的流量大幅度提高，<strong>按量计算，两天就花了100了</strong>……这个学费有点贵TuT</li>
+</ul>
 ]]></content>
       <categories>
         <category>chit-chat</category>
@@ -86,8 +89,8 @@
         <category>chit-chat</category>
       </categories>
       <tags>
-        <tag>“Maven”</tag>
-        <tag>”阿里云ECS“</tag>
+        <tag>阿里云ECS</tag>
+        <tag>Maven</tag>
       </tags>
   </entry>
 </search>
