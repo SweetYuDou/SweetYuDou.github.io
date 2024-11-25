@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>RE-NET论文姐e</title>
+    <title>RE-NET</title>
     <url>/2024/11/01/RE-Net/</url>
     <content><![CDATA[<h3 id="《Recurrent-Event-Network-Autoregressive-Structure-Inference-over-Temporal-Knowledge-Graphs》论文解读"><a href="#《Recurrent-Event-Network-Autoregressive-Structure-Inference-over-Temporal-Knowledge-Graphs》论文解读" class="headerlink" title="《Recurrent Event Network: Autoregressive Structure Inference over Temporal Knowledge Graphs》论文解读"></a>《Recurrent Event Network: Autoregressive Structure Inference over Temporal Knowledge Graphs》论文解读</h3><h4 id="RGCN"><a href="#RGCN" class="headerlink" title="RGCN"></a>RGCN</h4><p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2024/11/15/67376238bf47b.png" alt="RGCN_formula"></p>
 <p>W<sub>r</sub><sup>(l)</sup>是某一个特定的关系r（如弹劾，主动建交等）在第l层GCN中的权重矩阵，每一个不同的关系r对应其对应的权重矩阵，比如r<sub>1</sub>对应W<sub>1</sub>这样</p>
