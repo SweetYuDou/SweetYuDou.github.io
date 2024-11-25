@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>读RE-Net后有但不多的一些理解</title>
+    <title>RE-NET论文姐e</title>
     <url>/2024/11/01/RE-Net/</url>
     <content><![CDATA[<h3 id="《Recurrent-Event-Network-Autoregressive-Structure-Inference-over-Temporal-Knowledge-Graphs》论文解读"><a href="#《Recurrent-Event-Network-Autoregressive-Structure-Inference-over-Temporal-Knowledge-Graphs》论文解读" class="headerlink" title="《Recurrent Event Network: Autoregressive Structure Inference over Temporal Knowledge Graphs》论文解读"></a>《Recurrent Event Network: Autoregressive Structure Inference over Temporal Knowledge Graphs》论文解读</h3><h4 id="RGCN"><a href="#RGCN" class="headerlink" title="RGCN"></a>RGCN</h4><p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2024/11/15/67376238bf47b.png" alt="RGCN_formula"></p>
 <p>W<sub>r</sub><sup>(l)</sup>是某一个特定的关系r（如弹劾，主动建交等）在第l层GCN中的权重矩阵，每一个不同的关系r对应其对应的权重矩阵，比如r<sub>1</sub>对应W<sub>1</sub>这样</p>
@@ -39,7 +39,7 @@
       </tags>
   </entry>
   <entry>
-    <title>玩Docker后有但不多的一些心得</title>
+    <title>Docker学习笔记</title>
     <url>/2024/11/14/Docker/</url>
     <content><![CDATA[<ul>
 <li>docker镜像源（加速地址）是国内的源来拉镜像，可能有一些镜像没有，代理就是从Docker hub拉。<strong>你拉的镜像如果是<em>Dockerhub</em>的，并且国内镜像源没有，那镜像源也不好使，只能老老实实配合代理</strong>。阿里云ECS可以使用阿里云镜像加速器，<code>/etc/docker/daemon.json</code>如下配置即可，不要加其他源：</li>
@@ -79,7 +79,7 @@
       </tags>
   </entry>
   <entry>
-    <title>玩Spring Boot后有但不多的一些心得</title>
+    <title>Spring Boot学习笔记</title>
     <url>/2024/11/16/Maven/</url>
     <content><![CDATA[<ul>
 <li>Maven远程仓库默认为Maven Central Repository，可以在<code>/conf/settings.xml</code>中配置远程镜像仓库为国内阿里云镜像仓库，提高Jar包下载的速度和稳定性。配置settings.xml完成后保存退出。</li>
