@@ -108,35 +108,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ABOUTME</title>
-    <url>/2024/09/17/ABOUTME/</url>
-    <content><![CDATA[
-<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b547ab68b0f1c0b43ba30824a5939262a8bd1442438d6b5d0ba53b502b568c35">45a0c413c685c59efb3845d9cb3133c80249b8c9bd04d026bcf23d42b1c41a63a9e949d12c57d879cf4e9b69d36f07ae243ae900dfa2b2d9028ee6c1caffe18d2453c2cb63ef25cdbae3158dae2b043d4d22829a201bec53aea06bf25ccce1f8c92b2f0f58ab5e470d579808a27e8475edabe3020bf11c21175079a765aed1e66841f592397b05f8b7f1765143bd37f3f354826506d66edf5dff5571863d7dc9831d9799b461f47a7396dfb65e9a6f903f9b5cf289cce702b48c0fbe251eff675a96c327fa89e434f39c9e681970e43acc68612943fed4892c1b16fb622fa767d9563e2cb2e285bb36cb972c562fdeb3445c9fbe21a95f7ec2b496c7aa67064109dd9c41244e9ddfa480e06c89b9bfec6fea7d7c0db12d91027d12b38b7ef45ee7022d4e6d035f1a75c566f7470b2610ae090b675fe7bf7cd72dacee995e96414d502e52696f9db5bb26273b5dcc934199b68e07fa0b58e94cd66161b7e933c2c150a7f049a029903ee8187299fb645e1777d2b21322dfca4dc82fe5a61c8c6d229b8db67fd6fd39441c7f78606aa1edd7e73e9893724feea284cd226767f3c4f19ebaa7ccabeeb99f7ef7f2be942c871933e0af5a64571e1fff615e4f429625dc75850a80b2b301aac57824e0e42f45d1ee123f9c56bc03f5368b1989b029c42b3568d87f08c6e37ad24f64886face4ee7534025cdbe0e2f3ded036d7970fdea409720d02abb66bd150742f02ee5fcb56a53040d3a82c951795c993cf99ccadc9b860fc7d482443304485e225e2fee0ff037f4d6ff8f305d73a1c7c902a0c0ed1c130648e95b421e15016a30c39fa108fba3fb2175352e78686a652d42ef8c8f7aef498b8dc12c02b4b8a17ef91159f338a5f58866d10c2252b907f7bff9a21a5982c8985bfc72322dbf41bd21f51745cd78dfa575f6690584ba411d833386f2f59cddd43ff4da50aa788ffb1329a2e5c485359d31c4376853b9c21bcd626b80394655298e394b265782021c2d689782ee75e47f7fb38cf0a0ad21e197536699fee65721689dc8517d77d01d7cd1d3c3f8fafa0e1e5e08a31141c210b5a4b81d75862d37a5b922e55e719bb1c2c9cf0c42bf4d0f3a9de775d23073cfa3df02f7a3385ac3ec9f61756df94cafba4178bcddbffce803157926164c4c2471db5aefd9d2b5e96b4253a66fdb9a387e1fd7fddaae75e2718332e6143d0f1ef7fd06951d33bbfc5f8b933ac6babbe16482769920896bf2435c2ba7bf73487289ee1d39b1ac39eb4c87c97262dcd29b05a9749038c76a806e724779643a8a3bbe82453d5ebd07648ba08cbd7917a174d6d90340a9f9ccfcf7b27cf2b8490f0a25e8337db7ed579ea81a76863f7f014a1283e29aac83af1e31ebcb526f91da46b088bb224091081f34f7f7c8573ced20095a7bf53438de1ba74f13bab6edcaab81172c4e93f80a268832d4fd23c83d1e45b253fd88ad92b42b3a315ae79c0f8d0d3d71d7325f5caf724ec332df57a3c66750351a340e68ddf4debd26563343e88ac80246db804c383d563c97f9b81fbd6a1b832f4ea80588e8d94c9658623bad3786864b272a589cf980ead51965a05b54513bade99293985fabfad60e89de1ac2ec6771ffd2b1c644edf79eff2b3715f7e2249bb0e390beb38ddd4547ef630e59338bd4d480ebac943e46736923cbc1eeaee591a796cdf359643fb4964cd7e1f563c6e851ea1c60999cd60fc6643adfa30cd135bf60b279bdd4227d054bf2d1d3a1f4e2476d05e785e7254f41b0d623e5cf8f4796dabdd3633b80be9782261ac66c1ebb616aa71f3210249b96666af387b56b1b4741b4bee872452e56223acd53fe362a7f76ef61dbee2706dfc911e6f848e0aed64f46476c4a24a3853de34981315f44e2b8b4107991e3cbc4ad5f13944f2d1</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
-<script data-swup-reload-script type="module">
-import {initHBE} from "/js/plugins/hbe.js";
-  console.log("hexo-blog-encrypt: loaded.");
-    initHBE();
-</script>
-]]></content>
-      <categories>
-        <category>chit-chat</category>
-      </categories>
-      <tags>
-        <tag>me</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对FPS游戏作弊工具的一些理解</title>
     <url>/2024/11/25/DMA/</url>
     <content><![CDATA[<p>这两天看到了个几张图片，据说是超越了DMA的作弊工具，看完后心血来潮想研究一下现在的一些游戏外挂的原理。</p>
@@ -158,6 +129,61 @@ import {initHBE} from "/js/plugins/hbe.js";
         <tag>学习笔记</tag>
         <tag>DMA</tag>
         <tag>HMTT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>interview</title>
+    <url>/2024/12/17/interview/</url>
+    <content><![CDATA[<h4 id="12-17-UsingAI大模型算法实习生一面"><a href="#12-17-UsingAI大模型算法实习生一面" class="headerlink" title="12.17 UsingAI大模型算法实习生一面"></a>12.17 UsingAI大模型算法实习生一面</h4><ol>
+<li>介绍项目</li>
+<li>继承和封装是什么？</li>
+<li>多线程是什么？</li>
+<li>learning_rate过大会出现什么情况？</li>
+<li>怎么处理过拟合？</li>
+<li>l1和l2正则化是什么？有什么区别？</li>
+<li>CNN卷积核越大越好吗？</li>
+<li>对于很大的数据集，怎么提高决策树的效率？</li>
+<li>交叉验证怎么找到k值？</li>
+<li>文本分类的模型了解哪些？</li>
+</ol>
+<ul>
+<li><p>约3-4天后联系二面</p>
+</li>
+<li><p>提问：几轮面试？</p>
+<blockquote>
+<p>回答：两轮技术面一轮leader面</p>
+</blockquote>
+</li>
+<li><p>BTW一面的小姐姐声音还挺甜的:)</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>chit-chat</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>面经</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vpn</title>
+    <url>/2024/11/30/vpn/</url>
+    <content><![CDATA[<p>代理、VPN和加速器的区别</p>
+<p>什么是代理（Proxy）？<br>代理服务器是一个网络服务，它允许用户通过它来转发网络请求和响应。简单来说，当你使用代理服务器时，你的网络请求先发送到这个代理服务器，由它代表你访问目标网站，然后再将网站的数据转发回你的设备。代理的种类繁多，常见的有HTTP代理、HTTPS代理和SOCKS代理。</p>
+<p>代理的主要功能是帮助用户突破地理或网络访问限制，提高匿名性。但它们通常不会加密数据，因此安全性不如VPN。</p>
+<p>VPN（虚拟私人网络）<br>VPN，即虚拟私人网络，能在公共网络上建立一条加密的私人通道，让用户的数据在传输过程中保持隐私和安全。当使用VPN时，用户的所有网络流量都会通过这个加密通道传输，不仅仅是浏览网页，包括所有应用产生的流量，如邮件、游戏和文件传输等。</p>
+<p>VPN不仅可以用来翻墙访问被屏蔽的网站，还能保护用户在公共Wi-Fi下的上网安全，防止数据被窃取。</p>
+<p>翻墙技术<br>翻墙是一个非正式的术语，通常指的是绕过互联网封锁，访问在某地区或国家被限制或屏蔽的网络内容。翻墙不是一种技术，而是一个包含多种技术的过程。使用代理和VPN都可以实现翻墙的目的，除此之外，还有一些专门为翻墙设计的工具，如Tor网络。</p>
+<p>它们之间的联系与区别<br>尽管代理、VPN和翻墙技术在某些方面有所重叠，但它们之间还是存在一些本质的区别。代理更适用于快速访问特定服务，而VPN提供了更全面、更安全的网络访问解决方案。翻墙则是一个广泛的概念，涵盖了使用代理、VPN等多种技术来绕过网络限制。</p>
+<p>总的来说，用户在选择这些工具时应根据自己的需求和所在地区的网络环境来做决定。安全性和隐私保护常常是选择VPN而不是简单代理的主要原因，而寻求特定服务的快速访问，则可能倾向于使用代理服务器。</p>
+]]></content>
+      <categories>
+        <category>chit-chat</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>vpn</tag>
       </tags>
   </entry>
 </search>
