@@ -267,7 +267,7 @@
 <p>•     理解HTTP协议基本概念，掌握HTTP调试工具的使用</p>
 <p>•     理解网络服务API的概念，学会HTTP RESTful API的使用</p>
 <p>•     理解并掌握Python Requests</p>
-<h4 id="3-2-实验步骤与对应成果展示"><a href="#3-2-实验步骤与对应成果展示" class="headerlink" title="3.2 实验步骤与对应成果展示"></a>3.2 实验步骤与对应成果展示</h4><p> [exp_pyms_api_demo.zip](......\yj</p>
+<h4 id="3-2-实验步骤与对应成果展示"><a href="#3-2-实验步骤与对应成果展示" class="headerlink" title="3.2 实验步骤与对应成果展示"></a>3.2 实验步骤与对应成果展示</h4><p><a class="link" href="https://github.com/SweetYuDou/System-Middleware-and-Cloud-Virtualization/tree/main/exp_pyms_api_demo">System-Middleware-and-Cloud-Virtualization&#x2F;exp_pyms_api_demo at main · SweetYuDou&#x2F;System-Middleware-and-Cloud-Virtualization <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>​	在ACR中创建镜像仓库，以备后续的镜像上传</p>
 <p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/14/67866bd496fbd.png" alt="img"></p>
 <p>​	启动本实验提供的微服务范例，体验HTTP RESTful API接口，本服务范例在8000端口监听，启动命令为：</p>
@@ -329,9 +329,14 @@
         <category>software-engineering</category>
       </categories>
       <tags>
+        <tag>Docker</tag>
+        <tag>Maven</tag>
+        <tag>Spring Boot</tag>
         <tag>阿里云</tag>
         <tag>Serverless</tag>
         <tag>Nacos</tag>
+        <tag>Git</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
 </search>
