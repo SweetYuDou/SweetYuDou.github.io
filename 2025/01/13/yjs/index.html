@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="YuDou">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+        
+        
+        
+            <link rel="preconnect" href="https://evan.beee.top" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2025/01/13/yjs/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="1. 基于阿里云云效Codeup的Git代码管理1.1 实验目标与相关知识技能•     了解Git常用指令及其基本原理，如：git push,git pull,git init,git add,git config,git branch,git commit等 •     了解一些常见的Linux系统命令，如：cd,cat,touch等 •     学会使用ssh方式访问仓库，减少不必要的交互以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="系统中间件与云虚拟化实践">
+<meta property="og:url" content="http://example.com/2025/01/13/yjs/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. 基于阿里云云效Codeup的Git代码管理1.1 实验目标与相关知识技能•     了解Git常用指令及其基本原理，如：git push,git pull,git init,git add,git config,git branch,git commit等 •     了解一些常见的Linux系统命令，如：cd,cat,touch等 •     学会使用ssh方式访问仓库，减少不必要的交互以">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/13/6783edb9378ba.png">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/13/6783edb8d428c.png">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/13/6785313586e43.jpg">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/13/6785313522372.jpg">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/13/678531347f773.jpg">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/13/67853134866b3.png">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/14/67866bd496fbd.png">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/14/67866aeab506c.png">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/14/67866aedac18f.gif">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/14/67866ae867e7a.jpg">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/14/67866ae9278db.jpg">
+<meta property="article:published_time" content="2025-01-12T16:02:29.000Z">
+<meta property="article:modified_time" content="2025-01-14T14:02:37.126Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="阿里云">
+<meta property="article:tag" content="Serverless">
+<meta property="article:tag" content="Nacos">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.helloimg.com/i/2025/01/13/6783edb9378ba.png">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/jett.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/jett.png">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/jett.png">
+    <!--- Page Info-->
+    
+    <title>
+        
+            系统中间件与云虚拟化实践 | YuDou&#39;s Blog
+        
+    </title>
+
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/fonts/Chillax/chillax.css">
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/assets/build/styles.css">
+    
+
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/fonts/GeistMono/geist-mono.css">
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/fonts/Geist/geist.css">
+    <!--- Font Part-->
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["dreaming..."]},"code_block":{"copy":true,"style":"simple","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"all_rights_reserved"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"SweetYuDou","subtitle":{"text":["我站在鼓楼上面，一切繁华与我无关"],"hitokoto":{"enable":false,"show_author":true,"api":"https://v1.hitokoto.cn/?c=c&c=d&c=i&c=k"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":false,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/SweetYuDou","instagram":null,"zhihu":null,"twitter":null,"email":null,"fa-solid fa-envelope":"mailto:yud0u@qq.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":"当冬夜渐暖","artist":"孙燕姿","url":"/music/孙燕姿-当冬夜渐暖.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000011TdfZ2J78KH_2.jpg?max_age=2592000","lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Status":{"path":"https://status.ohevan.com/","icon":"fa-regular fa-chart-bar"}},"search":{"enable":true,"preload":true},"tags":{"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":20},"tags":{"enable":true,"limit":20}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/fontawesome/regular.min.css">
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container flex flex-col justify-between min-h-dvh">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+                <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/">
+                    <img src="/images/jett.png" class="w-full h-full rounded-sm">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                YuDou&#39;s Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    ARCHIVES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   target="_blank" rel="noopener" href="https://status.ohevan.com/"
+                                        >
+                                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                                    STATUS
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives"
+                        >
+                            <span>
+                                ARCHIVES
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           target="_blank" rel="noopener" href="https://status.ohevan.com/"
+                        >
+                            <span>
+                                STATUS
+                            </span>
+                            
+                                <i class="fa-regular fa-chart-bar fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">11</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">系统中间件与云虚拟化实践</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/lycoris.jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">YuDou</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">dreaming...</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2025-01-13 00:02:29</span>
+        <span class="mobile">2025-01-13 00:02:29</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2025-01-14 22:02:37</span>
+            <span class="mobile">2025-01-14 22:02:37</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/software-engineering/">software-engineering</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">阿里云</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Serverless/">Serverless</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Nacos/">Nacos</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>3.6k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>15 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h3 id="1-基于阿里云云效Codeup的Git代码管理"><a href="#1-基于阿里云云效Codeup的Git代码管理" class="headerlink" title="1. 基于阿里云云效Codeup的Git代码管理"></a>1. 基于阿里云云效Codeup的Git代码管理</h3><h4 id="1-1-实验目标与相关知识技能"><a href="#1-1-实验目标与相关知识技能" class="headerlink" title="1.1 实验目标与相关知识技能"></a>1.1 <strong>实验目标与相关知识技能</strong></h4><p>•     了解Git常用指令及其基本原理，如：git push,git pull,git init,git add,git config,git branch,git commit等</p>
+<p>•     了解一些常见的Linux系统命令，如：cd,cat,touch等</p>
+<p>•     学会使用ssh方式访问仓库，减少不必要的交互以提高效率</p>
+<h4 id="1-2-实验步骤与对应成果展示"><a href="#1-2-实验步骤与对应成果展示" class="headerlink" title="1.2 实验步骤与对应成果展示"></a>1.2 <strong>实验步骤与对应成果展示</strong></h4><p>​	创建test.py文件，暂存至暂存区后观察文件状态，提交至本地仓库后观察文件状态，推送至远程仓库并观察文件状态</p>
+<div class="highlight-container" data-rel="Cmd"><figure class="iseeu highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> &quot;import json&quot; &gt; test.py  #创建test.py</span><br><span class="line">git add test.py  #暂存test.py</span><br><span class="line">git status  #观察文件状态</span><br><span class="line">git commit -m &quot;feat(test.py):引入json&quot;  #提交至本地仓库</span><br><span class="line">git status  #观察文件状态</span><br><span class="line">git push origin master  #推送至远程仓库</span><br><span class="line">git status  #观察文件状态</span><br></pre></td></tr></table></figure></div>
+
+<p>​	至此，已完成暂存、提交、推送三个基本操作，本地代码已同步至云端Codeup</p>
+<p>​	修改test.py文件后观察文件状态，暂存修改后的文件并观察文件状态，添加<code>&quot;import re&quot;</code>至<code>test.py</code>中，观察文件状态，提交至本地仓库后观察文件状态，推送至云端仓库后观察文件状态，查看历史提交记录</p>
+<div class="highlight-container" data-rel="Cmd"><figure class="iseeu highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> &quot;import random&quot; &gt; test.py  #修正test.py</span><br><span class="line">git status</span><br><span class="line">git add test.py</span><br><span class="line">git status</span><br><span class="line"><span class="built_in">echo</span> &quot;import re&quot; &gt;&gt; test.py</span><br><span class="line">git status</span><br><span class="line">git commit -a -m &quot;feat(test.py)：引入random，re&quot;</span><br><span class="line">git status</span><br><span class="line">git push</span><br><span class="line">git status</span><br><span class="line">git log  #git log用于查看历史提交记录 </span><br></pre></td></tr></table></figure></div>
+
+<p>​	修改<code>test.py</code>，暂存文件<code>test.py</code>，取消暂存<code>test.py</code>，提交至本地仓库，撤销提交，再次提交至本地仓库，推送至云端仓库，本地回滚后再次强行推送至远程仓库，期间不断<code>git status</code>观察文件状态</p>
+<div class="highlight-container" data-rel="Cmd"><figure class="iseeu highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> &quot;<span class="built_in">print</span>(&#x27;Hello world&#x27;)&quot; &gt;&gt; test.py</span><br><span class="line">git status</span><br><span class="line">git add test.py</span><br><span class="line">git status</span><br><span class="line">git <span class="built_in">restore</span> --staged test.py  #将本地仓库HEAD指向的版本复制到暂存区</span><br><span class="line">git status</span><br><span class="line">git add test.py</span><br><span class="line">git reset HEAD test.py</span><br><span class="line">git commit -m &quot;feat(test.py)：打印Hello World&quot;</span><br><span class="line">git status</span><br><span class="line">git reset HEAD~  #HEAD~是HEAD的父节点，设置HEAD指向当前提交的上一次提交</span><br><span class="line">git status</span><br><span class="line">git commit -a -m &quot;feat(test.py)：打印Hello World&quot;</span><br><span class="line">git push origin master</span><br><span class="line">git reset HEAD~</span><br><span class="line">git push -f origin master</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>​	取消对<code>test.py</code>的跟踪并恢复，与最近一次修改前的<code>test.py</code>进行比较，暂存<code>test.py</code>至暂存区，删除<code>test.py</code>，查看<code>test.py</code>的内容，从暂存区中恢复<code>test.py</code>，查看test.py内容，删除<code>test.py</code>，再强制删除已暂存的<code>test.py</code>，尝试恢复被删除的文件，查看<code>test.py</code>是否被恢复，从暂存区中恢复<code>test.py</code>，查看<code>test.py</code>的内容</p>
+<div class="highlight-container" data-rel="Cmd"><figure class="iseeu highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">Plain Text</span><br><span class="line">git rm --cached test.py  #取消对test.py的跟踪</span><br><span class="line">git status</span><br><span class="line">git add test.py</span><br><span class="line">git diff test.py</span><br><span class="line">git status</span><br><span class="line">git add test.py</span><br><span class="line">git status</span><br><span class="line">rm test.py  #删除test.py</span><br><span class="line">cat test.py  #在终端中打印test.py的内容</span><br><span class="line">git status</span><br><span class="line">git <span class="built_in">restore</span> test.py</span><br><span class="line">cat test.py</span><br><span class="line">git status</span><br><span class="line">git rm test.py</span><br><span class="line">git rm -f test.py</span><br><span class="line">git status</span><br><span class="line">git <span class="built_in">restore</span> test.py</span><br><span class="line">git <span class="built_in">restore</span> --staged test.py</span><br><span class="line">git status</span><br><span class="line">git <span class="built_in">restore</span> test.py</span><br><span class="line">cat test.py</span><br></pre></td></tr></table></figure></div>
+
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/13/6783edb9378ba.png" alt="img"></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/13/6783edb8d428c.png" alt="img"></p>
+<h4 id="1-3-遇到的主要问题、解决思路和收获"><a href="#1-3-遇到的主要问题、解决思路和收获" class="headerlink" title="1.3 遇到的主要问题、解决思路和收获"></a>1.3 <strong>遇到的主要问题、解决思路和收获</strong></h4><p>​	该实验暂未遇到问题</p>
+<h3 id="2-基于阿里云-ECS-与-ACR-的容器镜像管理"><a href="#2-基于阿里云-ECS-与-ACR-的容器镜像管理" class="headerlink" title="2. 基于阿里云 ECS 与 ACR 的容器镜像管理"></a>2. 基于阿里云 ECS 与 ACR 的容器镜像管理</h3><h4 id="2-1-实验目标与相关知识技能"><a href="#2-1-实验目标与相关知识技能" class="headerlink" title="2.1 实验目标与相关知识技能"></a>2.1 实验目标与相关知识技能</h4><p>•     掌握ECS的基本操作，能较为熟练地使用Linux平台，如ECS远程连接，Xftp 7传输文件等</p>
+<p>•     掌握Docker的常用命令，包括拉取镜像，启动容器，查看镜像，删除镜像，暂停容器等</p>
+<p>•     学会撰写Dockerfile文件来构建镜像，并基于阿里云ACR完成镜像的pull和push</p>
+<h3 id="2-2-实验步骤与对应成果展示"><a href="#2-2-实验步骤与对应成果展示" class="headerlink" title="2.2 实验步骤与对应成果展示"></a>2.2 实验步骤与对应成果展示</h3><p>​	使用<code>docker pull</code>拉取<code>nginx</code>镜像</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull nginx</span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用<code>docker images</code>查看已拉取的镜像</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用<code>docker run</code>运行<code>docker</code>容器</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name nginx -p 80:80 nginx</span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用docker ps查看当前运行的容器信息</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps  </span><br></pre></td></tr></table></figure></div>
+
+<p>​	此时可用本地浏览器访问该ECS服务器公网，即<code>http://&lt;ECS公网IP&gt;</code>以此验证容器是否正常运行</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/13/6785313586e43.jpg" alt="img"></p>
+<p>​	将Nginx服务的配置文件、日志文件及Web服务的根目录分别建立持久化映射，可以理解为让容器中的目录与宿主目录进行同步</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /opt/docker/nginx/conf.d</span><br><span class="line"><span class="built_in">mkdir</span> -p /opt/docker/nginx/logs</span><br><span class="line"><span class="built_in">mkdir</span> -p /opt/docker/nginx/html</span><br><span class="line"><span class="comment"># -p --parents：如果路径中任意一级父目录不存在，则创建</span></span><br><span class="line"></span><br><span class="line">docker <span class="built_in">cp</span> nginx:/etc/nginx/nginx.conf /opt/docker/nginx/</span><br><span class="line">docker <span class="built_in">cp</span> nginx:/etc/nginx/conf.d /opt/docker/nginx/</span><br><span class="line">docker <span class="built_in">cp</span> nginx:/usr/share/nginx/html /opt/docker/nginx/</span><br></pre></td></tr></table></figure></div>
+
+<p>​	现在要想Nginx服务使用持久化存储的数据，需要先停止再删除当前运行的nginx容器</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker stop nginx</span><br><span class="line">docker <span class="built_in">rm</span> nginx</span><br><span class="line">docker ps -a <span class="comment">#观察是否删除成功</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	重新执行<code>docker run</code>，同时配置好相关参数</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -v, --volume list：挂在目录，&lt;宿主目录&gt;:&lt;容器目录&gt;</span></span><br><span class="line">docker run -d --restart=always \</span><br><span class="line">            --name nginx \</span><br><span class="line">            -p 80:80 \</span><br><span class="line">            -v /opt/docker/nginx/nginx.conf:/etc/nginx/nginx.conf \</span><br><span class="line">            -v /opt/docker/nginx/html:/usr/share/nginx/html \</span><br><span class="line">            -v /opt/docker/nginx/logs:/var/log/nginx \</span><br><span class="line">            nginx</span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用<code>docker stop</code>,<code>docker start</code>进行练习</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker stop nginx</span><br><span class="line">docker start nginx</span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用<code>curl</code>命令获取网页内容</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl 127.0.0.1:80  <span class="comment">#在ECS终端上输入，所以地址是127.0.0.1</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用<code>docker exec</code>命令进入容器。该命令定义为在容器内部运行一条指定命令，可以指定命令为Shell程序，如<code>/bin/bash</code>，配合参数<code>-it</code>，可以实现进入容器进行命令行交互式操作</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it nginx /bin/bash</span><br><span class="line"><span class="comment"># -i --interactive，保持交互模式</span></span><br><span class="line"><span class="comment"># -t --tty，分配一个伪终端（模拟终端）</span></span><br><span class="line"><span class="comment"># nginx，容器名称</span></span><br><span class="line"><span class="comment"># /bin/bash，待执行的命令，进入bash shell</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	进入容器后，在nginx服务的Web服务的根目录中创建<code>test.html</code>文件。由于容器本身不支持<code>vim</code>，因此用<code>echo</code>命令进行编写，最后用<code>exit</code>命令退出容器</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/share/nginx/html</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;&lt;h1&gt;Hello,world&lt;/h1&gt;&quot;</span> &gt; test.html</span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line"><span class="built_in">ls</span> /opt/docker/nginx/html  <span class="comment">#查看是否成功持久化储存到宿主系统</span></span><br><span class="line">curl 127.0.0.1:80/test.html  </span><br></pre></td></tr></table></figure></div>
+
+<p>​	除了curl命令，一样可以用浏览器访问<code>http://&lt;ECS公网地址&gt;/test.html</code>来验证</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/13/6785313522372.jpg" alt="img"></p>
+<p>​	使用<code>docker logs</code>查看容器日志，可以通过此方法来判断容器是否正常工作</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs nginx</span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用<code>dcoker rmi</code>删除不必要的容器镜像时，要先删除使用该镜像的容器，想删除容器又得先停止容器实例运行。故删除镜像的顺序如下：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker stop nginx</span><br><span class="line">docker <span class="built_in">rm</span> nginx</span><br><span class="line">docker rmi nginx</span><br><span class="line">docker images  <span class="comment">#判断镜像是否删除成功</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	构建Docker容器镜像可以通过编写并运行Dockerfile文件来实现，一般而言，Dockerfile的文件指令逻辑应按照以下模式建立：选择合适的基础镜像、安装基础工具与依赖、添加其他应用、清理缓存、声明镜像端口暴露情况、设置默认启动命令</p>
+<div class="highlight-container" data-rel="Dockerfile"><figure class="iseeu highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用Ubuntu作为基础镜像</span></span><br><span class="line"><span class="keyword">FROM</span> ubuntu:<span class="number">22.04</span></span><br><span class="line"><span class="comment"># 维护者信息</span></span><br><span class="line"><span class="keyword">LABEL</span><span class="language-bash"> maintainer=<span class="string">&quot;&lt;yud0u@qq.com&gt;&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置工作目录</span></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="language-bash"> /app</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装nginx及Python</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> apt-get update &amp;&amp; apt-get install -y \</span></span><br><span class="line"><span class="language-bash">    nginx \</span></span><br><span class="line"><span class="language-bash">    python3 \</span></span><br><span class="line"><span class="language-bash">    python3-distutils</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 清理apt软件包缓存    </span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> <span class="built_in">rm</span> -rf /var/lib/apt/lists/*</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#声明暴露端口</span></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">80</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#设置启动命令</span></span><br><span class="line"><span class="keyword">CMD</span><span class="language-bash">[<span class="string">&quot;nginx&quot;</span>, <span class="string">&quot;-g&quot;</span>, <span class="string">&quot;daemon off;&quot;</span>]</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用docker build命令创建容器镜像（最好在Dockerfile同一目录下运行）</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -t, tag：镜像名称（REPOSITORY：TAG）</span></span><br><span class="line"><span class="comment"># npu：Nginx Python Ubuntu，自定义镜像名称</span></span><br><span class="line"><span class="comment"># .：PATH，执行命令的上下文路径，构造过程中可以引用该上下文中的任何文件</span></span><br><span class="line">docker build -t npu .</span><br><span class="line">docker images  <span class="comment">#查看镜像是否创建成功</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	运行该镜像，检测Nginx服务；进入容器后检测Python解析能力</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name npu -p 80:80 npu</span><br><span class="line">curl 127.0.0.1</span><br><span class="line">docker <span class="built_in">exec</span> -it npu /bin/bash</span><br><span class="line">(nginx)python3</span><br><span class="line"><span class="built_in">exit</span>()</span><br><span class="line">(nginx)<span class="built_in">exit</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	将创建的npu镜像推送至ACR，在此之前先在ACR控制台创建镜像仓库<code>npu</code></p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker login --username=鱼豆YuDou crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com</span><br><span class="line">docker tag [ImageId] crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/npu:[镜像版本号]</span><br><span class="line">docker push crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/npu:[镜像版本号]</span><br></pre></td></tr></table></figure></div>
+
+<p>​	推送成功后可以在该镜像仓库中查看提交记录</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/13/678531347f773.jpg" alt="img"></p>
+<p>​	从ACR中拉取容器镜像进行测试，需要先删除本地容器及其镜像</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker stop npu</span><br><span class="line">docker <span class="built_in">rm</span> npu</span><br><span class="line">docker rmi npu</span><br><span class="line">docker rmi crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/npu</span><br><span class="line">docker images  <span class="comment">#查看镜像是否删除成功</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	删除后再进行拉取操作，并进行测试</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker pull crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/npu:latest</span><br><span class="line">docker run -d --name npu -p 80:80 crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/npu:latest</span><br><span class="line">curl 127.0.0.1  <span class="comment">#查看容器是否正常运行</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="2-4-遇到的主要问题、解决思路和收获"><a href="#2-4-遇到的主要问题、解决思路和收获" class="headerlink" title="2.4 遇到的主要问题、解决思路和收获"></a>2.4 遇到的主要问题、解决思路和收获</h4><p>​	<strong>（✅）本实验遇到的最大问题为：docker拉取镜像超时。</strong></p>
+<p>​	为解决此问题，共尝试了三种方法：</p>
+<ol>
+<li>（❌）在<code>/etc/docker/daemon.json</code>下配置docker镜像源，包括各种华为云等镜像源，配置方法参考以下链接<a class="link" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_50160384/article/details/139861337%EF%BC%8C%E4%BD%86%E5%9D%87%E4%BB%A5%E5%A4%B1%E8%B4%A5%E5%91%8A%E7%BB%88">https://blog.csdn.net/weixin_50160384/article/details/139861337，但均以失败告终 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>（❌）在<code>/etc/docker/daemon.json</code>下配置阿里云镜像加速器，在ACR中获取加速器地址，并按如下方式配置，不添加其他镜像源，但效果并不稳定，有时可以拉取成功有时又不行</li>
+</ol>
+<div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;registry-mirrors&quot;</span><span class="punctuation">:</span><span class="punctuation">[</span><span class="string">&quot;https://***.mirror.aliyuncs.com&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/13/67853134866b3.png" alt="image-20250113233043464"></p>
+<ol start="3">
+<li>（✅）为ECS服务器配置代理，在网上阅读了许多文章后，我将具体方法总结在我的个人博客上：<a class="link" target="_blank" rel="noopener" href="https://sweetyudou.github.io/2024/11/14/Docker/%E3%80%82%E7%AE%80%E8%80%8C%E8%A8%80%E4%B9%8B%EF%BC%8C%E6%88%91%E4%BD%BF%E7%94%A8clash%E6%88%90%E5%8A%9F%E4%B8%BAECS%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86%EF%BC%8C%E5%B9%B6%E4%B8%94%E6%88%90%E5%8A%9F%E5%81%9A%E5%88%B0%E4%BA%86%E7%A8%B3%E5%AE%9A%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%EF%BC%8C%E6%98%AF%E4%B8%80%E5%8A%B3%E6%B0%B8%E9%80%B8%E7%9A%84%E5%A5%BD%E6%96%B9%E6%B3%95">https://sweetyudou.github.io/2024/11/14/Docker/。简而言之，我使用clash成功为ECS服务器配置代理，并且成功做到了稳定拉取镜像，是一劳永逸的好方法 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ol>
+<h3 id="3-基于阿里云ECS与ACR的Python微服务镜像构建、部署与接口访问"><a href="#3-基于阿里云ECS与ACR的Python微服务镜像构建、部署与接口访问" class="headerlink" title="3. 基于阿里云ECS与ACR的Python微服务镜像构建、部署与接口访问"></a>3. 基于阿里云ECS与ACR的Python微服务镜像构建、部署与接口访问</h3><h4 id="3-1-实验目标与相关知识技能"><a href="#3-1-实验目标与相关知识技能" class="headerlink" title="3.1 实验目标与相关知识技能"></a>3.1 实验目标与相关知识技能</h4><p>•     掌握Dockerfile构建容器镜像</p>
+<p>•     理解HTTP协议基本概念，掌握HTTP调试工具的使用</p>
+<p>•     理解网络服务API的概念，学会HTTP RESTful API的使用</p>
+<p>•     理解并掌握Python Requests</p>
+<h4 id="3-2-实验步骤与对应成果展示"><a href="#3-2-实验步骤与对应成果展示" class="headerlink" title="3.2 实验步骤与对应成果展示"></a>3.2 实验步骤与对应成果展示</h4><p> [exp_pyms_api_demo.zip](......\yj</p>
+<p>​	在ACR中创建镜像仓库，以备后续的镜像上传</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/14/67866bd496fbd.png" alt="img"></p>
+<p>​	启动本实验提供的微服务范例，体验HTTP RESTful API接口，本服务范例在8000端口监听，启动命令为：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./exp_pyms_api_demo ./device.csv</span><br><span class="line"><span class="comment"># ./exp_pyms_api_demo &lt;csv_file&gt;,csv_file为存储设备信息的CSV文件路径。若该路径中存在CSV文件则读取信息，否则自动创建5条设备信息并生成CSV文件</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	此时访问<code>http://&lt;IP&gt;:8000/docs</code>将会看到以下页面：</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/14/67866aeab506c.png" alt="image-20250114213605484"></p>
+<p>​	此时当前目录创建<code>device.csv</code>文件：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -F  <span class="comment">#查看是否创建device.csv文件</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	<code>Ctrl + C</code>退出程序后，创建Dockerfile文件</p>
+<div class="highlight-container" data-rel="Dockerfile"><figure class="iseeu highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用Ubuntu 22.04 作为基础镜像</span></span><br><span class="line"><span class="keyword">FROM</span> ubuntu:<span class="number">22.04</span></span><br><span class="line"><span class="keyword">LABEL</span><span class="language-bash"> maintainer=<span class="string">&quot;&lt;yud0u@qq.com&gt;&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定工作目录为 /app</span></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="language-bash"> /app</span></span><br><span class="line"><span class="comment">#将主机文件系统中的 exp_pyms_api_demo 复制到镜像中</span></span><br><span class="line"><span class="keyword">COPY</span><span class="language-bash"> exp_pyms_api_demo exp_pyms_api_demo</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 暴露服务端口 8000</span></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">8000</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定容器的启动命令，devcie.csv 将存储在容器的/var/lib/exp_pyms_data/ 目录下，因此该目录应持久化</span></span><br><span class="line"><span class="keyword">CMD</span><span class="language-bash"> [<span class="string">&quot;/app/exp_pyms_api_demo&quot;</span>, <span class="string">&quot;/var/lib/exp_pyms_data/device.csv&quot;</span>]</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用<code>docker build</code>命令构建容器镜像，镜像名为<code>exp_pyms_api_demo:1.0</code></p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker build -t exp_pyms_api_demo:1.0 .</span><br><span class="line">docker images  <span class="comment">#查看镜像是否构建成功</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	将镜像上传至ACR镜像仓库</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker login --username=鱼豆YuDou crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com</span><br><span class="line">docker tag [ImageId] crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/exp_pyms_api_demo:[镜像版本号]</span><br><span class="line">docker push crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/exp_pyms_api_demo:[镜像版本号]</span><br></pre></td></tr></table></figure></div>
+
+<p>​	推送成功后，可在镜像仓库exp_pyms_api_demo的页面中查看刚刚推送的镜像</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/14/67866aedac18f.gif" alt="img"></p>
+<p>​	远程登录ECS并拉取镜像</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/exp_pyms_api_demo:[镜像版本号]</span><br></pre></td></tr></table></figure></div>
+
+<p>​	在ECS工作目录创建持久化目录exp_pyms_data，用于存储容器内服务生成的业务数据文档，即设备信息数据，随后运行该镜像</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> exp_pyms_data</span><br><span class="line">docker run -d --restart=always\</span><br><span class="line">            --name exp_pyms_api_demo \</span><br><span class="line">            -v ./exp_pyms_data/:/var/lib/exp_pyms_data/ \</span><br><span class="line">            -p 8000:8000 \</span><br><span class="line">            crpi-n4sctgr4gzd05xye.cn-hangzhou.personal.cr.aliyuncs.com/exp_yd/exp_pyms_api_demo:1.0</span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用docker logs查看服务是否成功启动</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker logs exp_pyms_api_demo  </span><br><span class="line"><span class="built_in">ls</span> exp_pyms_data/  <span class="comment">#若有device.csv文件，则成功创建5条设备信息且服务成功运行</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	使用OpenAPI查看微服务接口，在浏览器中通过<code>&lt;ecs_ip&gt;:8000/docs</code>来访问<code>Redocly</code>文档地址</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/14/67866ae867e7a.jpg" alt="img"></p>
+<p>​	同理，本实验Swagger文档地址为<code>&lt;ecs_ip&gt;:8000/docs/swagger</code></p>
+<p><img lazyload src="/images/loading.svg" data-src="https://www.helloimg.com/i/2025/01/14/67866ae9278db.jpg" alt="img"></p>
+<p>​	配置Python虚拟环境<code>exp_venv</code></p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python3 -m venv exp_venv</span><br><span class="line"><span class="built_in">source</span> exp_venv/bin/activate</span><br><span class="line">pip install requests</span><br></pre></td></tr></table></figure></div>
+
+<p>​	进入Python交互式界面进行初步验证</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">python3</span><br><span class="line">import requests  <span class="comment">#验证requests库是否可导入</span></span><br><span class="line">requests.__version__  <span class="comment">#查看requests版本</span></span><br><span class="line"><span class="built_in">exit</span>()</span><br></pre></td></tr></table></figure></div>
+
+<p>​	查看先前生成的device.csv文件内容，通过Requests库访问接口来获取设备信息</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> exp_pyms_data/device.csv</span><br><span class="line">python3</span><br><span class="line">import requests</span><br><span class="line">resp = requests.get(<span class="string">&quot;http://&lt;ecs_ip&gt;:8000/v1/devices&quot;</span>,json=&#123;<span class="string">&quot;id&quot;</span>:<span class="string">&quot;6713124465&quot;</span>&#125;)  <span class="comment">#通过id来检索设备并获取信息，该id为随机生成的例子</span></span><br><span class="line">resp</span><br><span class="line">resp.status_code  <span class="comment">#查看状态码判断访问是否成功，访问成功的HTTP状态码为200</span></span><br><span class="line">resp.text</span><br><span class="line">resp.json()</span><br></pre></td></tr></table></figure></div>
+
+<p>​	同时还支持用“序号SN-类型”来检索设备</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">resp = requests.get(<span class="string">&quot;http://&lt;ecs_ip&gt;:8000/v1/devices&quot;</span>, json=&#123;<span class="string">&quot;sn&quot;</span>: <span class="string">&quot;XRmiI&quot;</span>, <span class="string">&quot;model&quot;</span>: <span class="string">&quot;Raspberry Pi 4&quot;</span>&#125;)  <span class="comment">#该组合信息为随机生成的例子</span></span><br><span class="line">resp.status_code</span><br><span class="line">resp.json()</span><br></pre></td></tr></table></figure></div>
+
+<p>​	体验删除接口</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">resp = requests.delete(<span class="string">&quot;http://&lt;ecs_ip&gt;:8000/v1/devices&quot;</span>, json=&#123;<span class="string">&quot;ids&quot;</span>:[<span class="string">&quot;3116641919&quot;</span>, <span class="string">&quot;94791787847&quot;</span>, <span class="string">&quot;1234567890&quot;</span>]&#125;)</span><br><span class="line">resp.json()</span><br><span class="line"><span class="built_in">cat</span> exp_pyms_data/device.csv  <span class="comment">#查看设备信息是否被删除</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	体验添加设备接口</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">resp = requests.post(</span><br><span class="line">    <span class="string">&quot;htpp://&lt;ecs_ip&gt;:8000/v1/devices&quot;</span>,</span><br><span class="line">    json=&#123;</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;test-name&quot;</span>,</span><br><span class="line">        <span class="string">&quot;type&quot;</span>: <span class="string">&quot;controller&quot;</span>,</span><br><span class="line">        <span class="string">&quot;hardware&quot;</span>:&#123;</span><br><span class="line">            <span class="string">&quot;model&quot;</span>: <span class="string">&quot;test-model&quot;</span>,</span><br><span class="line">            <span class="string">&quot;sn&quot;</span>: <span class="string">&quot;test-sn&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="string">&quot;software&quot;</span>: &#123;</span><br><span class="line">                <span class="string">&quot;version&quot;</span>: <span class="string">&quot;0.1&quot;</span>,</span><br><span class="line">                <span class="string">&quot;last_update&quot;</span>: <span class="string">&quot;2023-08-06 20:00:00&quot;</span></span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="string">&quot;nic&quot;</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="string">&quot;type&quot;</span>: <span class="string">&quot;wifi&quot;</span>,</span><br><span class="line">                        <span class="string">&quot;mac&quot;</span>: <span class="string">&quot;12:34:56:78:9a:bc&quot;</span>,</span><br><span class="line">                        <span class="string">&quot;ipv4&quot;</span>: <span class="string">&quot;192.168.1.2&quot;</span></span><br><span class="line">                    &#125;</span><br><span class="line">                ],</span><br><span class="line">                <span class="string">&quot;status&quot;</span>: <span class="string">&quot;online&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        )</span><br><span class="line">resp.json()</span><br><span class="line"><span class="built_in">cat</span> exp_pyms_data/device.csv  <span class="comment">#查看设备信息是否成功添加</span></span><br></pre></td></tr></table></figure></div>
+
+<p>​	体验更新设备信息接口</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">resp = requests.put(</span><br><span class="line">    <span class="string">&quot;http://127.0.0.1:8000/v1/devices&quot;</span>,</span><br><span class="line">    json=&#123;</span><br><span class="line">        <span class="string">&quot;id&quot;</span>: <span class="string">&quot;0922282528&quot;</span>,</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;new-name&quot;</span>,</span><br><span class="line">        <span class="string">&quot;software&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;version&quot;</span>: <span class="string">&quot;0.5&quot;</span>,</span><br><span class="line">            <span class="string">&quot;last_update&quot;</span>: <span class="string">&quot;2023-08-06 10:00:00&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;status&quot;</span>: <span class="string">&quot;offline&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line">resp.json()</span><br><span class="line"><span class="built_in">cat</span> exp_pyms_data/device.csv  <span class="comment">#查看是否成功更新设备信息</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="3-3-遇到的主要问题、解决思路和收获"><a href="#3-3-遇到的主要问题、解决思路和收获" class="headerlink" title="3.3 遇到的主要问题、解决思路和收获"></a>3.3 遇到的主要问题、解决思路和收获</h4><p>​	该实验暂未遇到问题</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 系统中间件与云虚拟化实践</li>
+        <li><strong>Author:</strong> YuDou</li>
+        <li><strong>Created at
+                :</strong> 2025-01-13 00:02:29</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2025-01-14 22:02:37
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://sweetyudou.github.io/2025/01/13/yjs/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                All Rights Reserved &#169; YuDou
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">#阿里云</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Serverless/">#Serverless</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Nacos/">#Nacos</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/11/30/vpn/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">VPN等网络优化工具的一些理解</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">系统中间件与云虚拟化实践</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%91%E6%95%88Codeup%E7%9A%84Git%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86"><span class="nav-text">1. 基于阿里云云效Codeup的Git代码管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91-ECS-%E4%B8%8E-ACR-%E7%9A%84%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E7%AE%A1%E7%90%86"><span class="nav-text">2. 基于阿里云 ECS 与 ACR 的容器镜像管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E5%AE%9E%E9%AA%8C%E6%AD%A5%E9%AA%A4%E4%B8%8E%E5%AF%B9%E5%BA%94%E6%88%90%E6%9E%9C%E5%B1%95%E7%A4%BA"><span class="nav-text">2.2 实验步骤与对应成果展示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91ECS%E4%B8%8EACR%E7%9A%84Python%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA%E3%80%81%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE"><span class="nav-text">3. 基于阿里云ECS与ACR的Python微服务镜像构建、部署与接口访问</span></a></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">YuDou</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        6 posts in total
+                    </span>
+                    
+                        <span>
+                            7.5k words in total
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.3</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+    <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/Swup.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/SwupSlideTheme.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/SwupScriptsPlugin.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/SwupProgressPlugin.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/SwupScrollPlugin.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/SwupPreloadPlugin.min.js" ></script>
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+<script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/tools/imageViewer.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/utils.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/main.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/layouts/navbarShrink.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/tools/scrollTopBottom.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/tools/lightDarkSwitch.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/layouts/categoryList.js" ></script>
+
+
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/tools/localSearch.js" ></script>
+
+
+
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/tools/codeBlock.js" ></script>
+
+
+
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/layouts/lazyload.js" ></script>
+
+
+
+    <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/tools/runtime.js" ></script>
+    <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/odometer.min.js" ></script>
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/assets/odometer-theme-minimal.css">
+
+
+
+  <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/Typed.min.js" ></script>
+  <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/plugins/typed.js" ></script>
+
+
+
+
+
+
+
+    <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/anime.min.js" ></script>
+
+
+
+
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/tools/tocToggle.js" data-swup-reload-script></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/layouts/toc.js" data-swup-reload-script></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/plugins/tabs.js" data-swup-reload-script></script>
+
+
+<script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/libs/moment-with-locales.min.js" data-swup-reload-script></script>
+<script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.7.3/source/js/layouts/essays.js" data-swup-reload-script></script>
+
+
+
+</body>
+</html>
