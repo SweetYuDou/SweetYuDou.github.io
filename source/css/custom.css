@@ -1,0 +1,16 @@
+/* Keep code comments readable when they contain Chinese characters. */
+pre code,
+.highlight pre,
+.highlight code,
+.code-container pre,
+.code-container code {
+  font-family: "Cascadia Mono", "Sarasa Mono SC", "JetBrains Mono", "Consolas",
+    "Microsoft YaHei UI", monospace !important;
+}
+
+pre .comment,
+pre .quote,
+.highlight .comment,
+.highlight .quote {
+  font-style: normal !important;
+}

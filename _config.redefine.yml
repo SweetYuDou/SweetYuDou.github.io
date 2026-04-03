@@ -284,7 +284,7 @@ articles:
     line_height: 1.5 # Line height
     image_border_radius: 14px # image border radius
     image_alignment: center # image alignment. left, center
-    image_caption: true # Whether to display image caption
+    image_caption: false # Whether to display image caption
     link_icon: true # Whether to display link icon
     delete_mask: false # Add mask effect to <del> tags, hiding content by default and revealing on hover
     title_alignment: left # Title alignment. left, center
@@ -433,7 +433,7 @@ inject:
   enable: true
   # Inject custom head html code
   head: 
-    -
+    - <link rel="stylesheet" href="/css/custom.css">
     -
   # Inject custom footer html code
   footer:
