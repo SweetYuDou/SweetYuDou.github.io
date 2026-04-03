@@ -480,7 +480,7 @@ page_templates:
   # Friend Links page column number
   friends_column: 2
   # Tags page style
-  tags_style: blur # blur, cloud
+  tags_style: cloud # blur, cloud
   # Masonry page batch size
   masonry:
     batch_size: 12
