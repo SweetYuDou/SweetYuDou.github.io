@@ -371,7 +371,7 @@ comment:
       clientSecret: eb48dfc8ddc308bb63eab3f76744abcfb4f1eadc # GitHub Application Client Secret
       repo: Blog-Comments # GitHub repository
       owner: SweetYuDou # GitHub repository owner
-      proxy: # GitHub repository proxy
+      proxy: https://gitalk-proxy.yudou0917.workers.dev/login/oauth/access_token # GitHub repository proxy
     # Twikoo comment system. See https://twikoo.js.org/
     twikoo:
       version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
