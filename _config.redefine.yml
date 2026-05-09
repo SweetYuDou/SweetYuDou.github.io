@@ -432,7 +432,8 @@ inject:
   # Whether to enable inject
   enable: true
   # Inject custom head html code
-  head: 
+  head:
+    - <meta name="referrer" content="no-referrer">
     - <link rel="stylesheet" href="/css/custom.css">
     -
   # Inject custom footer html code
